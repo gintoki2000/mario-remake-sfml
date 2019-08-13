@@ -1,0 +1,52 @@
+#ifndef TMXPARSER_H
+#define TMXPARSER_H
+#include "tmxlite/Property.hpp"
+#include "tmxlite/Map.hpp"
+#include "tmxlite/Layer.hpp"
+#include "tmxlite/TileLayer.hpp"
+#include "tmxlite/ObjectGroup.hpp"
+#include "tmxlite/Object.hpp"
+#include "node.h"
+#include "tilesets.h"
+#include "tiledmap.h"
+#include "block.h"
+#include "properties.h"
+#include <map>
+#include <functional>
+class TTmxParser
+{
+public:
+    TTmxParser();
+    bool load(const std::string& tmxFilePath);
+
+    CNode *getRootObject() const;
+
+    CTilesets *getTileSet() const;
+
+
+private:
+    void parseTiledMap(CTiledMap* tiledMap, CTilesets* tilesets, const tmx::TileLayer& tiledMapData);
+    void parseTileset(CTileset* tileset, const tmx::Tileset& tilesetData);
+    void parseObjectGroup(CNode* objectGroup,const tmx::ObjectGroup& objectGroupData);
+
+    template<class __object_type>
+    __object_type* createObject(const TProperties& property)
+    {
+        return __object_type::create(property);
+    }
+
+    template<class __block_type>
+    __block_type* createBlock(const sf::Vector2f& position, CTile* tile)
+    {
+        return __block_type::create(position, tile);
+    }
+
+    static std::map<std::string, std::function<CBlock*(const sf::Vector2f&, CTile*)>> blockFactories;
+    static std::map<std::string, std::function<CNode*(const TProperties&)>> gameObjectFactories;
+    CTilesets* mTileSet;
+    CNode* mRootObject;
+    tmx::Map mMap;
+
+};
+
+#endif // TMXPARSER_H

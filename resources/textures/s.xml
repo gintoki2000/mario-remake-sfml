@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- created with http://www.physicseditor.de -->
+<bodydef version="1.0">
+	<bodies>
+
+		<body name="Mario">
+            <anchorpoint>0.5000,0.5000</anchorpoint>
+			<fixtures>
+
+				<fixture>
+					<density>2</density>
+					<friction>0</friction>
+					<restitution>0</restitution>
+					<filter_categoryBits>1</filter_categoryBits>
+					<filter_groupIndex>0</filter_groupIndex>
+					<filter_maskBits>65535</filter_maskBits>
+					<fixture_type>POLYGON</fixture_type>
+
+
+					<polygons>
+
+                        <polygon>  -227.0000, -32.0000  ,  -224.0000, 1.0000  ,  -226.6667, 13.0000  ,  -229.0000, 22.0000  ,  -251.0000, 4.0000  ,  -256.0000, -13.0000  ,  -255.0000, -33.0000 </polygon>
+
+                        <polygon>  -251.0000, 25.0000  ,  -255.0000, 13.0000  ,  -254.0000, 6.0000  ,  -251.0000, 4.0000  ,  -229.0000, 22.0000  ,  -235.0000, 27.0000 </polygon>
+
+                        <polygon>  -257.0000, -3.0000  ,  -256.0000, -13.0000  ,  -251.0000, 4.0000 </polygon>
+
+					</polygons>
+
+				</fixture>
+
+			</fixtures>
+		</body>
+
+	</bodies>
+	<metadata>
+		<format>1</format>
+		<ptm_ratio>32</ptm_ratio>
+	</metadata>
+</bodydef>
+
+
+

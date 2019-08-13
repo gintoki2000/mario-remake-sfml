@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="17" height="13" tilewidth="32" tileheight="32" infinite="0" nextobjectid="24">
+ <tileset firstgid="1" source="Tiles.tsx"/>
+ <layer name="TiledMap" width="17" height="13">
+  <data encoding="base64">
+   AgAAAAAAAAAAAAAAAAAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAFwAAABgAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXAAAAGAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABcAAAAYAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFwAAABgAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXAAAAGAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABcAAAAYAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFwAAABgAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXAAAAGAAAAAIAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAAAAAAAAAAAAAAAAAAAAABcAAAAYAAAAAgAAAAAAAAAAAAAAAAAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAAAAAAAAAAAAB0AAAAeAAAAHwAAABgAAAACAAAAAAAAAAAAAAAAAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAAAAAAAAAAAJQAAACYAAAAnAAAAGAAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAA=
+  </data>
+ </layer>
+ <objectgroup name="PickUps">
+  <object id="1" name="Coin" type="Coin" x="130" y="223" width="32" height="32"/>
+  <object id="3" name="Coin" type="Coin" x="162" y="223" width="32" height="32"/>
+  <object id="4" name="Coin" type="Coin" x="194" y="224" width="32" height="32"/>
+  <object id="5" name="Coin" type="Coin" x="228" y="224" width="32" height="32"/>
+  <object id="6" name="Coin" type="Coin" x="258" y="224" width="32" height="32"/>
+  <object id="7" name="Coin" type="Coin" x="290" y="224" width="32" height="32"/>
+  <object id="8" name="Coin" type="Coin" x="322" y="223" width="32" height="32"/>
+  <object id="9" name="Coin" type="Coin" x="128" y="159" width="32" height="32"/>
+  <object id="10" name="Coin" type="Coin" x="160" y="161" width="32" height="32"/>
+  <object id="11" name="Coin" type="Coin" x="193" y="160" width="32" height="32"/>
+  <object id="12" name="Coin" type="Coin" x="225" y="160" width="32" height="32"/>
+  <object id="13" name="Coin" type="Coin" x="257" y="160" width="32" height="32"/>
+  <object id="14" name="Coin" type="Coin" x="288" y="159" width="32" height="32"/>
+  <object id="15" name="Coin" type="Coin" x="320" y="160" width="32" height="32"/>
+  <object id="16" name="Coin" type="Coin" x="291" y="96" width="32" height="32"/>
+  <object id="17" name="Coin" type="Coin" x="224" y="95" width="32" height="32"/>
+  <object id="18" name="Coin" type="Coin" x="224" y="95" width="32" height="32"/>
+  <object id="19" name="Coin" type="Coin" x="163" y="97" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup name="Portals">
+  <object id="20" name="exit" type="Portal" x="385" y="303" width="69" height="48">
+   <properties>
+    <property name="Direction" value="right"/>
+    <property name="SpawningPortal" value="exit_underground_portal"/>
+    <property name="Type" value="enter"/>
+    <property name="World" value="world-1-1.tmx"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Object Layer 3">
+  <object id="23" name="Player" type="Player" x="64" y="31" width="32" height="32"/>
+ </objectgroup>
+</map>
